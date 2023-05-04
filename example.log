@@ -1,0 +1,449 @@
+2023-05-03 20:41:58,251 - telegram.ext._application - INFO - Application is stopping. This might take a moment.
+2023-05-03 20:41:58,251 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-05-03 20:41:58,251 - telegram.ext._application - INFO - Application.stop() complete
+2023-05-03 20:42:02,789 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-03 20:42:02,789 - telegram.ext._application - INFO - Application started
+2023-05-03 20:42:53,052 - telegram.ext._application - INFO - Application is stopping. This might take a moment.
+2023-05-03 20:42:53,053 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-05-03 20:42:53,053 - telegram.ext._application - INFO - Application.stop() complete
+2023-05-03 20:46:39,123 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-03 20:46:39,123 - telegram.ext._application - INFO - Application started
+2023-05-03 20:52:44,027 - logInfo - INFO - User name: Ekaterina
+2023-05-04 17:36:37,107 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:36:37,108 - telegram.ext._application - INFO - Application started
+2023-05-04 17:37:02,842 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 22, in start
+    context.user_data[key] = Entry()
+TypeError: Entry.__init__() missing 4 required positional arguments: 'latitude', 'longitude', 'user_id', and 'photo_id'
+2023-05-04 17:37:31,368 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:37:31,368 - telegram.ext._application - INFO - Application started
+2023-05-04 17:37:37,614 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 22, in start
+    context.user_data[key] = Entry()
+TypeError: Entry.__init__() missing 4 required positional arguments: 'latitude', 'longitude', 'user_id', and 'photo_id'
+2023-05-04 17:40:15,038 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 22, in start
+    context.user_data[key] = Entry()
+TypeError: Entry.__init__() missing 4 required positional arguments: 'latitude', 'longitude', 'user_id', and 'photo_id'
+2023-05-04 17:41:23,129 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:41:23,129 - telegram.ext._application - INFO - Application started
+2023-05-04 17:41:30,162 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:42:28,225 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 46, in photo
+    key = context.args[0]
+TypeError: 'NoneType' object is not subscriptable
+2023-05-04 17:51:23,997 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:51:23,997 - telegram.ext._application - INFO - Application started
+2023-05-04 17:51:27,541 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:51:36,257 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 46, in photo
+    key = context.args[0]
+TypeError: 'NoneType' object is not subscriptable
+2023-05-04 17:52:52,661 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:52:52,662 - telegram.ext._application - INFO - Application started
+2023-05-04 17:52:58,779 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:53:04,705 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 46, in photo
+    key = context.args[0]
+TypeError: 'NoneType' object is not subscriptable
+2023-05-04 17:54:26,916 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:54:26,916 - telegram.ext._application - INFO - Application started
+2023-05-04 17:54:27,155 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:54:32,930 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 17:56:23,477 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:56:23,478 - telegram.ext._application - INFO - Application started
+2023-05-04 17:56:28,796 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:56:34,345 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 17:59:10,816 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 17:59:10,817 - telegram.ext._application - INFO - Application started
+2023-05-04 17:59:18,052 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 17:59:23,100 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 18:00:48,730 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:00:48,731 - telegram.ext._application - INFO - Application started
+2023-05-04 18:00:48,847 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:00:52,871 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 44, in photo
+    print(context.user_data.keys[0])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+2023-05-04 18:02:13,642 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:02:13,642 - telegram.ext._application - INFO - Application started
+2023-05-04 18:02:17,689 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:02:22,925 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 18:02:48,092 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:02:48,093 - telegram.ext._application - INFO - Application started
+2023-05-04 18:02:54,893 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:03:01,166 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 18:03:32,875 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:03:32,876 - telegram.ext._application - INFO - Application started
+2023-05-04 18:03:37,227 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:03:42,040 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 45, in photo
+    key = context.user_data.args[0]
+AttributeError: 'dict' object has no attribute 'args'
+2023-05-04 18:04:05,604 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:04:05,604 - telegram.ext._application - INFO - Application started
+2023-05-04 18:04:08,621 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:04:13,376 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 44, in photo
+    print(context.user_data.keys()[0])
+TypeError: 'dict_keys' object is not subscriptable
+2023-05-04 18:06:01,949 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:06:01,950 - telegram.ext._application - INFO - Application started
+2023-05-04 18:06:02,060 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:06:07,158 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:06:34,697 - logInfo - INFO - Location of 699094527: 44.797169 / 20.333840
+2023-05-04 18:11:29,155 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:11:29,155 - telegram.ext._application - INFO - Application started
+2023-05-04 18:11:42,313 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:11:45,635 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:11:52,272 - logInfo - INFO - Location of 699094527: 44.798016 / 20.328823
+2023-05-04 18:13:49,198 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:13:49,198 - telegram.ext._application - INFO - Application started
+2023-05-04 18:13:52,081 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:13:54,950 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:13:58,743 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 18:13:58,886 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 79, in location
+    await asyncio.run(db.insert(context.user_data[key]))
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\asyncio\runners.py", line 33, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2023-05-04 18:16:12,960 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:16:12,961 - telegram.ext._application - INFO - Application started
+2023-05-04 18:16:13,072 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:16:16,250 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:16:21,829 - logInfo - INFO - Location of 699094527: 44.796254 / 20.332313
+2023-05-04 18:18:53,134 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:18:53,135 - telegram.ext._application - INFO - Application started
+2023-05-04 18:19:01,301 - telegram.ext._application - INFO - Application is stopping. This might take a moment.
+2023-05-04 18:19:01,302 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-05-04 18:19:01,302 - telegram.ext._application - INFO - Application.stop() complete
+2023-05-04 18:19:03,921 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:19:03,921 - telegram.ext._application - INFO - Application started
+2023-05-04 18:19:10,686 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:19:14,299 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:19:19,786 - logInfo - INFO - Location of 699094527: 44.796254 / 20.332313
+2023-05-04 18:21:44,156 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 18:21:44,157 - telegram.ext._application - INFO - Application started
+2023-05-04 18:21:47,403 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 18:21:52,282 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 18:21:58,517 - logInfo - INFO - Location of 699094527: 44.796254 / 20.332313
+2023-05-04 18:21:58,808 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 79, in location
+    await asyncio(db.setup())
+TypeError: 'module' object is not callable
+2023-05-04 19:24:13,605 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:24:13,605 - telegram.ext._application - INFO - Application started
+2023-05-04 19:24:31,708 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:24:38,038 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:24:44,614 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 19:24:44,784 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 81, in location
+    await asyncio(db.setup())
+TypeError: 'module' object is not callable
+2023-05-04 19:26:33,710 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:26:33,711 - telegram.ext._application - INFO - Application started
+2023-05-04 19:26:39,199 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:26:42,998 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:26:47,202 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 19:26:47,333 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_application.py", line 1115, in process_update
+    await coroutine
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_conversationhandler.py", line 826, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_handler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "c:\Users\Boris\YandexDisk\Kate\Small Projects\BelgradeGarbageCollector\core\commands.py", line 81, in location
+    await asyncio.run(db.setup())
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\asyncio\runners.py", line 33, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2023-05-04 19:34:54,644 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:34:54,644 - telegram.ext._application - INFO - Application started
+2023-05-04 19:34:59,151 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:35:04,392 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:35:09,158 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 19:35:50,680 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:35:50,680 - telegram.ext._application - INFO - Application started
+2023-05-04 19:35:55,537 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:35:58,791 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:36:04,232 - logInfo - INFO - Location of 699094527: 44.796276 / 20.332324
+2023-05-04 19:38:27,861 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:38:27,861 - telegram.ext._application - INFO - Application started
+2023-05-04 19:38:33,999 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:38:37,842 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:38:43,467 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 19:40:08,514 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 19:40:08,515 - telegram.ext._application - INFO - Application started
+2023-05-04 19:40:15,226 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 19:40:18,159 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 19:40:21,798 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 20:14:58,220 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 20:15:19,371 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 20:23:49,990 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 20:27:13,497 - telegram.ext._application - INFO - Application is stopping. This might take a moment.
+2023-05-04 20:27:13,497 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-05-04 20:27:13,498 - telegram.ext._application - INFO - Application.stop() complete
+2023-05-04 20:27:29,267 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 20:27:29,267 - telegram.ext._application - INFO - Application started
+2023-05-04 20:27:51,900 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 20:27:56,083 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 20:28:00,207 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 20:28:11,177 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 20:28:20,988 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 20:28:24,636 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 20:29:51,407 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 20:29:57,392 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 20:30:02,136 - logInfo - INFO - Location of 699094527: 44.796189 / 20.332278
+2023-05-04 21:05:09,180 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 21:05:13,006 - logInfo - INFO - User 699094527 canceled the conversation
+2023-05-04 21:12:23,749 - telegram.ext._application - INFO - Application is stopping. This might take a moment.
+2023-05-04 21:12:23,750 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2023-05-04 21:12:23,750 - telegram.ext._application - INFO - Application.stop() complete
+2023-05-04 21:12:34,741 - apscheduler.scheduler - INFO - Scheduler started
+2023-05-04 21:12:34,741 - telegram.ext._application - INFO - Application started
+2023-05-04 21:12:42,146 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 21:13:23,833 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 21:13:35,472 - logInfo - INFO - Location of 699094527: 44.796983 / 20.332658
+2023-05-04 21:13:55,378 - logInfo - INFO - User name Ekaterina, id 699094527
+2023-05-04 21:14:02,972 - logInfo - INFO - User 699094527 uploaded the photo
+2023-05-04 21:14:06,591 - logInfo - INFO - Location of 699094527: 44.797092 / 20.332715
+2023-05-04 21:30:48,178 - telegram.ext._updater - ERROR - Error while getting Updates: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2023-05-04 21:30:48,179 - telegram.ext._application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\anyio\_core\_sockets.py", line 186, in connect_tcp
+    addr_obj = ip_address(remote_host)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\ipaddress.py", line 54, in ip_address
+    raise ValueError(f'{address!r} does not appear to be an IPv4 or IPv6 address')
+ValueError: 'api.telegram.org' does not appear to be an IPv4 or IPv6 address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\backends\asyncio.py", line 111, in connect_tcp
+    stream: anyio.abc.ByteStream = await anyio.connect_tcp(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\anyio\_core\_sockets.py", line 189, in connect_tcp
+    gai_res = await getaddrinfo(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_transports\default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_async\connection_pool.py", line 253, in handle_async_request
+    raise exc
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_async\connection_pool.py", line 237, in handle_async_request
+    response = await connection.handle_async_request(request)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_async\connection.py", line 86, in handle_async_request
+    raise exc
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_async\connection.py", line 63, in handle_async_request
+    stream = await self._connect(request)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_async\connection.py", line 111, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\backends\auto.py", line 29, in connect_tcp
+    return await self._backend.connect_tcp(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\backends\asyncio.py", line 109, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\request\_httpxrequest.py", line 216, in do_request
+    res = await self._client.request(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_client.py", line 1533, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_client.py", line 1620, in send
+    response = await self._send_handling_auth(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_client.py", line 1648, in _send_handling_auth
+    response = await self._send_handling_redirects(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_client.py", line 1685, in _send_handling_redirects
+    response = await self._send_single_request(request)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_client.py", line 1722, in _send_single_request
+    response = await transport.handle_async_request(request)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_transports\default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_extbot.py", line 530, in get_updates
+    updates = await super().get_updates(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\_bot.py", line 368, in decorator
+    result = await func(*args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\_bot.py", line 3623, in get_updates
+    await self._post(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\_bot.py", line 456, in _post
+    return await self._do_post(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\ext\_extbot.py", line 312, in _do_post
+    return await super()._do_post(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\_bot.py", line 487, in _do_post
+    return await request.post(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\request\_baserequest.py", line 165, in post
+    result = await self._request_wrapper(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\request\_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\request\_baserequest.py", line 274, in _request_wrapper
+    code, payload = await self.do_request(
+  File "C:\Users\Boris\.pyenv\pyenv-win\versions\3.10.9\lib\site-packages\telegram\request\_httpxrequest.py", line 240, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: [Errno 11001] getaddrinfo failed
