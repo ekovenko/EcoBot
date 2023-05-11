@@ -15,7 +15,7 @@ class db_helper:
         self.dbname = db_name
         self.conn = sqlite3.connect(self.dbname)
     
-    def setup(self):
+    async def setup(self):
         create_table = '''
             CREATE TABLE IF NOT EXISTS locations
                 (loc_id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -28,7 +28,7 @@ class db_helper:
         self.conn.execute(create_table)
         self.conn.commit()
 
-    def insert(self, data: Entry):
+    async def insert(self, data: Entry):
         try:
             ins_data = (data.latitude, data.longitude, data.user_id, data.photo_id)
             ins_command = 'INSERT INTO locations VALUES (NULL, ?, ?, ?, ?)'
@@ -37,12 +37,5 @@ class db_helper:
             print("Insertion completed correctly")
         except Exception as e:
             print(e)
-
-
-    async def __async__setup(self):
-        return await self.setup()
-
-    async def __async__insert(self, data: Entry):
-        return await self.insert(data)
-
+            
 db = db_helper('locations')

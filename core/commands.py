@@ -3,7 +3,13 @@ from logInfo import logger
 from telegram.ext import ContextTypes, ConversationHandler
 from uuid import uuid4
 from enum import Enum
-import asyncio
+
+
+from keyboard import (
+    keyboard_welcome,
+    keyboard_share_geo,
+    keyboard_cancel,
+)
 
 from database import (
     db,
@@ -11,58 +17,55 @@ from database import (
 )
 
 class DataType(Enum):
+    BEGIN = 0
     PHOTO = 1
     LOCATION = 2
-    SAVEDATA = 3
-
     
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.message.from_user
-    logger.info('User name %s, id %s', user.first_name, user.id)
+    logger.info('User name %s, id %s started the conversation', user.first_name, user.id)
     await update.message.reply_text(
-        'Привет! Пришли, пожалуйста, фотографию локации.',
-        reply_markup = ReplyKeyboardRemove(),
+        'Привет, начнем?',
+        reply_markup = keyboard_welcome,
+    )
+    return DataType.BEGIN
+
+
+async def start_sharing(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    user = query.message.from_user
+    logger.info('User name %s, id %s started sharing', user.first_name, user.id)
+    await query.message.text(
+        'Пришли, пожалуйста, фотографию локации.'
     )
     return DataType.PHOTO
 
-#reply keyboard remove убирает насовсем боковое меню с кнопочками команд
-
-async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user = update.message.from_user
-    logger.info("User %s canceled the conversation", user.id)
-    await update.message.reply_text(
-        'Приходи, когда будет, что показать...',
-        reply_markup = ReplyKeyboardRemove()
-    )
-    return ConversationHandler.END
 
 
 async def photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.message.from_user
-    key = str(uuid4())
-    context.user_data[key] = Entry()
-    context.user_data[key].user_id = user.id
-    photo_name = key + ".jpg"
-    context.user_data[key].photo_id = photo_name
+    
+
+    context.user_data["info"] = Entry()
+    context.user_data["info"].user_id = user.id
+    context.user_data["info"].photo_id = str(uuid4()) + '.jpg'
+
     photo_file = await update.message.photo[-1].get_file()
-    await photo_file.download_to_drive(photo_name)
+    await photo_file.download_to_drive(context.user_data["info"].photo_id)
     logger.info("User %s uploaded the photo", user.id)
 
     await update.message.reply_text(
-        'Спасибо! Теперь я попрошу тебя прислать свои координаты.\n'
+        'Спасибо! Теперь я попрошу тебя прислать свои координаты.'
     )
     return DataType.LOCATION
-    #а тут надо понять, что делать, если пользователь не в том месте,
-    #где мусор, и просто хочет указать на карте
 
 
 async def location(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.message.from_user
     user_location = update.message.location
 
-    key = list(context.user_data.keys())[0]
-    context.user_data[key].latitude = user_location.latitude
-    context.user_data[key].longitude = user_location.longitude
+    context.user_data["info"].latitude = user_location.latitude
+    context.user_data["info"].longitude = user_location.longitude
 
     logger.info(
          "Location of %s: %f / %f", 
@@ -75,10 +78,23 @@ async def location(update: Update, context: ContextTypes.DEFAULT_TYPE):
         'Принято! Теперь волонтеры будут знать, '
         'где нужна их помощь.'
     )
-    print(context.user_data[key])
 
-    db.setup()
-    db.insert(context.user_data[key])
+    await db.setup()
+    await db.insert(context.user_data["info"])
     
     return ConversationHandler.END
 
+async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        'Ето хелп'
+    )
+
+
+async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    user = query.message.from_user
+    logger.info("User %s canceled the conversation", user.id)
+    await query.message.text(
+        'Приходи, когда будет, что показать...'
+    )
+    return ConversationHandler.END
