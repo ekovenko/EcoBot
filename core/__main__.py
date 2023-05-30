@@ -4,18 +4,33 @@ from telegram.ext import (
     MessageHandler,
     filters,
     ConversationHandler,
-    CallbackQueryHandler
+    CallbackQueryHandler,
+    ExtBot
 )
 
 
-from commands import (
+from new_entry_commands import (
     start,
-    start_sharing,
-    cancel,
+    begin_sharing,
     photo,
     location,
-    help, 
+    approx_size,
+    garbage_type,
+    end_session,
     DataType
+)
+
+from request_commands import (
+    show_nearby,
+    paginate
+)
+
+
+from keyboard import (
+    welcome_buttons, 
+    size_buttons,
+    type_buttons,
+    cancel_text
 )
 
 
@@ -29,22 +44,39 @@ if __name__ == '__main__':
         entry_points = [CommandHandler('start', start)],
         states = { 
                     DataType.BEGIN : [
-                        CallbackQueryHandler(start_sharing, pattern='start_sharing'),
-                        CallbackQueryHandler(cancel, pattern='cancel')
+                        MessageHandler(filters.ALL, begin_sharing)
                     ],
 
                     DataType.PHOTO: [
-                        MessageHandler(filters.PHOTO, photo)
+                        MessageHandler(filters.ALL, photo)
+                    ],
+                    
+                    DataType.SIZE: [
+                        MessageHandler(filters.ALL, approx_size)
+                    ],
+
+                    DataType.TYPE: [
+                        MessageHandler(filters.ALL, garbage_type)
                     ],
                     
                     DataType.LOCATION: [
-                        MessageHandler(filters.LOCATION, location)
-                  ]},
-        fallbacks = [CommandHandler('cancel', cancel)]
+                        MessageHandler(filters.ALL, location)
+                    ],
+
+                    DataType.NEARBY: [
+                        MessageHandler(filters.LOCATION|filters.Text(cancel_text), show_nearby),
+                        CallbackQueryHandler(paginate)
+                    ],
+                    DataType.END: [
+                        MessageHandler(filters.ALL & (~ filters.COMMAND), end_session)
+                    ]
+                  },
+        fallbacks = [MessageHandler(~filters.COMMAND,  end_session)],
+
     )
     
     application.add_handler(conv_handler)
-    application.add_handler(CommandHandler('help', help))
+    # application.add_handler(CommandHandler('help', help))
     application.run_polling()
 
 
