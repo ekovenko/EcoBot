@@ -7,8 +7,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     ExtBot
 )
-
-
+import json
 from new_entry_commands import (
     start,
     begin_sharing,
@@ -19,34 +18,30 @@ from new_entry_commands import (
     end_session,
     show_fav_loc
 )
-
 from dataclass import (
     DataType
 )
-
 from request_commands import (
     show_nearby,
     paginate
 )
-
-
 from keyboard import (
     welcome_buttons, 
     size_buttons,
     type_buttons,
     cancel_text
 )
-
 from loc_table import (
     table_loc
 )
-
 from user_table import (
     table_user
 )
 
+with open('config.json', 'r') as cfg:
+  data = json.load(cfg) 
 
-BOT_TOKEN = '6020419408:AAGqPVnOV3iZLZi2Ew2xsSUL88v10X2jAbI'
+BOT_TOKEN = data['bot_token']
 
 
 

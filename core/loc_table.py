@@ -93,7 +93,7 @@ class loc_helper:
                         size, 
                         type, 
                         num_users, 
-                        photo_id
+                        '{data.photo_id}'
                     FROM t
                 '''
                 cur.execute(replace)

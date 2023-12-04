@@ -107,6 +107,7 @@ async def photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         user = update.message.from_user
         context.user_data["info"].photo_id = str(uuid4()) + '.jpg'
+        print(context.user_data["info"].photo_id)
         photo_file = await update.message.photo[-1].get_file()
         await photo_file.download_to_drive(context.user_data["info"].photo_id)
         logger.info("User %s uploaded the photo", user.id)

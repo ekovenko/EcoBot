@@ -7,6 +7,7 @@ import json
 import numpy as np
 
 
+
 from keyboard import (
     keyboard_ok,
     cancel_text,
@@ -216,7 +217,7 @@ async def paginate(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     reply_markup = ReplyKeyboardRemove())
                 await query.from_user.send_message(
                     'Но ты всегда можешь самостоятельно добавить локацию'+\
-                    ' или посмотреть, что есть поблизости',
+                    ' либо посмотреть, что есть поблизости',
                     reply_markup=keyboard_welcome
                 )
                 return DataType.BEGIN
