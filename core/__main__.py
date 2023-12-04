@@ -17,6 +17,10 @@ from new_entry_commands import (
     approx_size,
     garbage_type,
     end_session,
+    show_fav_loc
+)
+
+from dataclass import (
     DataType
 )
 
@@ -33,8 +37,17 @@ from keyboard import (
     cancel_text
 )
 
+from loc_table import (
+    table_loc
+)
+
+from user_table import (
+    table_user
+)
+
 
 BOT_TOKEN = '6020419408:AAGqPVnOV3iZLZi2Ew2xsSUL88v10X2jAbI'
+
 
 
 if __name__ == '__main__':
@@ -67,11 +80,15 @@ if __name__ == '__main__':
                         MessageHandler(filters.LOCATION|filters.Text(cancel_text), show_nearby),
                         CallbackQueryHandler(paginate)
                     ],
+
+                    DataType.SIGNED: [
+                        CallbackQueryHandler(paginate)
+                    ],
                     DataType.END: [
-                        MessageHandler(filters.ALL & (~ filters.COMMAND), end_session)
+                        MessageHandler(filters.ALL & (~filters.COMMAND), end_session)
                     ]
                   },
-        fallbacks = [MessageHandler(~filters.COMMAND,  end_session)],
+        fallbacks = [MessageHandler(~filters.COMMAND,  end_session)]
 
     )
     

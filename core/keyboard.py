@@ -5,10 +5,11 @@ import json
 
 
 cancel_text = "Пожалуй, я передумал(а)"
-nearby_text = "Есть что-нибудь рядом?"
-welcome_text = "Внести запись"
+nearby = "Есть что-нибудь рядом? 🔍"
+add_new = "Внести запись ✏️"
+user_loc = "Мои локации 📋"
 
-welcome_buttons = [welcome_text, nearby_text]
+welcome_buttons = [add_new, nearby, user_loc]
 keyboard_welcome = ReplyKeyboardMarkup.from_column(welcome_buttons, resize_keyboard=True)
 
 size1 = "3 - 4 человека"
@@ -64,20 +65,15 @@ keyboard_cancel = ReplyKeyboardMarkup(
                 resize_keyboard=True
             )
 
-async def button_info(page, num_pages):
-    return InlineKeyboardButton(
-                text=f'{page}/{num_pages}', 
-                callback_data=f' '
-                )
 
 async def button_forward(page):
     callback_data = {
         "Method": "pagination",
         "CurrentPage": page + 1}
     return InlineKeyboardButton(
-                text="Вперёд --->",
+                text=">>",
                 callback_data=json.dumps(callback_data)
-            ) #не могу понять, че за форматирование такое
+            ) 
 
 async def button_backward(page):
     callback_data = {
@@ -85,16 +81,37 @@ async def button_backward(page):
         "CurrentPage": page - 1
     }
     return InlineKeyboardButton(
-                text="<--- Назад",
+                text="<<",
                 callback_data=json.dumps(callback_data)
             )
 
 async def button_cancel():
     callback_data = {
-        'Method': 'cancel'
+        'Method': 'cancel',
+        "CurrentPage": None
         }
     return InlineKeyboardButton(
         text="В другой раз",
+        callback_data=json.dumps(callback_data)
+    )
+
+async def button_apply(page):
+    callback_data = {
+        'Method': 'apply',
+        "CurrentPage": page
+    }
+    return InlineKeyboardButton(
+        text='Записаться на локацию',
+        callback_data=json.dumps(callback_data)
+    )
+
+async def button_delete(page):
+    callback_data = {
+        'Method': 'delete',
+        "CurrentPage": page
+    }
+    return InlineKeyboardButton(
+        text='Отписаться от локации',
         callback_data=json.dumps(callback_data)
     )
 
