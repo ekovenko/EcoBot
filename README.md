@@ -14,5 +14,4 @@ This bot aims to streamline the process by aggregating information about locatio
 There are come cool (for me personally) mechanics I rarely see incorporated in other bots, for example, vanishing messages after the choice has been made or pagination.
 
 # Perspectives:
-Right now I've reached the dead end as it's not clear how the users assigned to one location should interact with each other. \
-I'm still thinking on that and hope to come back later with a solution.
+Right now I'm working on the web part of this project that will allow eco-activists to communicate directly with each other after signing up for a location. 
